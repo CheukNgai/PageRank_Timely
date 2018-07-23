@@ -1,6 +1,6 @@
 # Rust_Project
  
- cd pagerank
+ cd ~/pagerank
   
 (Shell 1):  cargo run -- -n2 -p0
   
