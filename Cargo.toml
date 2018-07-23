@@ -1,0 +1,11 @@
+[package]
+name = "pagerank"
+version = "0.1.0"
+authors = ["cheukngai <77063219@qq.com>"]
+
+[dependencies]
+timely="*"
+rand="*"
+time="*"
+timely_sort="*"
+file="*"
