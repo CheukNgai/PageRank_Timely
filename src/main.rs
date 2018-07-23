@@ -79,7 +79,6 @@ fn main() {
                             if frontiers.iter().all(|f| !f.less_equal(time)) {
                             	//initial a session for further output(dst, delta)
 
-                                println!("in the block 1 \n\n");
                             	let mut session = output.session(time);
                             	for (src, dst) in edge_changes.drain(..) {
                             		// add this edge to the edges if not exist
@@ -167,7 +166,7 @@ fn main() {
         for (src, dst) in edge_list {
         	edge_input.send((src, dst));
         }
-        edge_input.advance_to(round+2);
+        edge_input.advance_to(round+1);
         while probe.less_than(edge_input.time()) {
             worker.step();
         }
